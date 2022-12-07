@@ -1,8 +1,8 @@
-﻿
-namespace tabuleiro
+﻿namespace tabuleiro
 {
     abstract class Peca
     {
+
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
         public int qteMovimentos { get; protected set; }
@@ -46,12 +46,6 @@ namespace tabuleiro
         {
             return movimentosPossiveis()[pos.linha, pos.coluna];
         }
-
-        public bool movimentoPossivel(Posicao pos)
-        {
-            return movimentosPossiveis()[pos.linha, pos.coluna];
-        }
-
         public abstract bool[,] movimentosPossiveis();
     }
 }
