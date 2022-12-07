@@ -2,8 +2,9 @@
 
 namespace xadrez
 {
-    internal class PosicaoXadrez
+    class PosicaoXadrez
     {
+
         public char coluna { get; set; }
         public int linha { get; set; }
 
@@ -13,7 +14,7 @@ namespace xadrez
             this.linha = linha;
         }
 
-        public Posicao ToPosicao()
+        public Posicao toPosicao()
         {
             return new Posicao(8 - linha, coluna - 'a');
         }
